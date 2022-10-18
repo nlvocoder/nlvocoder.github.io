@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Speech Synthesis</title>
+    <title>Non linear vocoder</title>
 	  	  
     <!-- Bootstrap -->
     <link href="
@@ -33,20 +33,21 @@
 
 <div class="container">
 	<div class="boxtest_ref">
-	<h1 style="color:PaleVioletRed;"><b>PROSODY-TTS: An end-to-end speech synthesis system with prosody control</b></h1>
+	<h1 style="color:PaleVioletRed;"><b>A non-linear source-filter based vocoder with prosody control</b></h1>
 <br>
 &nbsp;
 <br>
 
-	<p><font size="5"><style="color:blue;">Synthesized speech from different Speech synthesis systems without prosody modification</font></p>
-
-		<p style="font-size:20px;color:red;">(a). Short sentence synthesis</p>
+	<p><font size="5"><style="color:blue;">Synthesized speech from different vocoders without prosody modification</font></p>
 		
 		<table class="table">
                   <tbody">
                     <tr>
-                      <th style="color:brown;" class="align-middle">Parametric+WORLD</th>
-		      <th style="color:brown;" class="align-middle">Parametric+WaveNet</th>
+                      <th style="color:brown;" class="align-middle">Original</th>
+		      <th style="color:brown;" class="align-middle">WORLD</th>
+		      <th style="color:brown;" class="align-middle">Waffler</th>
+		      <th style="color:brown;" class="align-middle">NL-Vocoder 256</th>
+		      <th style="color:brown;" class="align-middle">NL-Vocoder 400</th>
 
                     </tr>
 		<tr>
@@ -55,16 +56,10 @@
 		<tr>
      <td><audio controls><source src="page/para_world/short1.wav" type="audio/mpeg"></audio></td>
      <td><audio controls><source src="page/para_wnet/page1_gen.wav" type="audio/mpeg"></audio></td>
-		</tr>  
-		<tr>
-     <td colspan="5"; style="font-size:17px; color:blue; padding: 0px 0px 0px 25px;">2. ɑːjən̪ə bʰɑːɾjə ɾɑːd͡ʒjələkʂmɪkɪ, ɾɑːʂʈɾə mə̃t̪ɾɪʋəɾgə̃loː s̪t̪ʰɑːn̪ə̃ ləbʰɪ̃t͡ʃɪn̪ɑː, ɑːme t̪ən̪ə pəd̪əʋɪkɪ ɾɑːd͡ʒiːn̪ɑːmɑː t͡ʃeːs̪t̪un̪əʈlu ʋɑːɾt̪əlot͡ʃt͡ʃɪn̪ə ʋɪʂəjə̃ ʋɪd̪ɪt̪əmeː. </td>
-                </tr>
-		<tr>
-     <td><audio controls><source src="page/para_world/short2.wav" type="audio/mpeg"></audio></td>
-     <td><audio controls><source src="page/para_wnet/page2_gen.wav" type="audio/mpeg"></audio></td>
-		</tr> 
-	           </tr>
-		    
+     <td><audio controls><source src="page/para_wnet/page1_gen.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/page1_gen.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/page1_gen.wav" type="audio/mpeg"></audio></td>
+		</tr>  	    
 		
                   </tbody>
                 </table>
